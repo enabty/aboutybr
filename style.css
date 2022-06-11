@@ -38,11 +38,6 @@ a:visited {
   color: var(--pink);
 }
 
-.container {
-  margin: 2rem auto;
-  padding: 2rem;
-  max-width: 37.5rem;
-}
 
 .microblog__title {
   font-size: 4rem;
@@ -57,13 +52,11 @@ a:visited {
   line-height: 2.6rem;
   font-weight: var(--font-weight-normal);
   color: var(--black);
-  margin-bottom: 2rem;
 }
 
 .microblog__link {
   font-size: 1.5rem;
   color: var(--black);
-  margin-bottom: 3rem;
   display: inline-block;
   transition: box-shadow var(--global-transition-time) ease 0s;
   text-underline-offset: 0.5rem;

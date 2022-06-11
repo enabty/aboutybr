@@ -44,12 +44,15 @@
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#f11012" />
     <meta name="theme-color" content="#ffffff" />
-
+    
+    <link rel="stylesheet" href="grid.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="scrap.css" />
   </head>
 
   <body>
     <main class="container">
+      <div class="header">
       <header>
         <h1 class="microblog__title">aboutybr.</h1>
         <p class="microblog__description">
@@ -63,7 +66,18 @@
           >View code on GitHub</a
         >
       </header>
+
+    <div class="navbar">
+      <span class="border" style="background:purple;color:white">Raise</span>
+      <span class="border" style="background:magenta;color:white">Raise</span>
+      <span class="border" style="background:burlywood;color:white">Raise</span>
+      <span class="border" style="background:orange;color:white">Raise</span>
+    </div>
+
+    </div>
+    <div class="content">
       <section data-items></section>
+    </div>
     </main>
     <footer class="footer">
       &copy; <span data-footer-year></span>
