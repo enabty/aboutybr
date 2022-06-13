@@ -247,12 +247,51 @@ a:visited {
           box-shadow: var(--yellow) 0 0 0 0.25rem;
 }
 
-.border {
+.navlink {
   font-size: 1.5em;
   font-family: monospace;
   border: 1px solid black;
   border-radius: 2px;
   -webkit-box-shadow: 1px 1px 2px 1px grey;
           box-shadow: 1px 1px 2px 1px grey;
+}
+
+/* From uiverse.io by @aasisodiya */
+button {
+  background-color: #eee;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 5rem;
+  border-radius: 1rem;
+  color: lightcoral;
+  -webkit-box-shadow: 0 0.4rem #dfd9d9;
+          box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+}
+
+button:active {
+  color: white;
+  -webkit-box-shadow: 0 0.2rem #dfd9d9;
+          box-shadow: 0 0.2rem #dfd9d9;
+  -webkit-transform: translateY(0.2rem);
+          transform: translateY(0.2rem);
+}
+
+button:hover:not(:disabled) {
+  background: lightcoral;
+  color: white;
+  text-shadow: 0 0.1rem #bcb4b4;
+}
+
+button:disabled {
+  cursor: auto;
+  color: grey;
+}
+
+#twitter {
+  margin: 1rem auto;
+  width: 10%;
+  height: 10%;
 }
 /*# sourceMappingURL=main.css.map */

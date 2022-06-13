@@ -17,7 +17,7 @@ const query = `{
         height
         description
       }
-      panther
+      icon
       link
       linkText
     }
@@ -85,7 +85,7 @@ const itemClassNames = {
   date: "item__date",
   img: "item__img",
   link: "item__link",
-  panther: "item__panther",
+  icon: "item__icon",
   text: "item__text",
 };
 
@@ -98,13 +98,13 @@ const renderItems = (items) => {
     const newTopRow = document.createElement("div");
     newTopRow.className = itemClassNames.topRow;
 
-    const newPantherEl = document.createElement("img");
-    newPantherEl.src = `./panthers/${item.panther}.svg`;
-    newPantherEl.alt = `${item.panther} panther emote`;
-    newPantherEl.setAttribute("width", "50");
-    newPantherEl.setAttribute("height", "50");
-    newPantherEl.className = itemClassNames.panther;
-    newTopRow.appendChild(newPantherEl);
+    const newIconEl = document.createElement("img");
+    newIconEl.src = `./icons/${item.icon}.svg`;
+    newIconEl.alt = `${item.icon} icon emote`;
+    newIconEl.setAttribute("width", "50");
+    newIconEl.setAttribute("height", "50");
+    newIconEl.className = itemClassNames.icon;
+    newTopRow.appendChild(newIconEl);
 
     const newDateEl = document.createElement("time");
     newDateEl.setAttribute("datetime", formatPublishedDateForDateTime(item.sys.firstPublishedAt));
